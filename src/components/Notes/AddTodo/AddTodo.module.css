@@ -1,0 +1,66 @@
+.form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 5px 4px #333);
+}
+.form input {
+  width: 50%;
+  min-width: 300px;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  border-radius: 20px 20px 0 0;
+  outline: none;
+  border: none;
+}
+.form textarea {
+  width: 50%;
+  min-width: 300px;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #333;
+  outline: none;
+  resize: none;
+  height: 15vh;
+  border: none;
+}
+.form .buttonArea {
+  width: 50%;
+  min-width: 300px;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  color: #333;
+  height: 8vh;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extraButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+.submitButton {
+  margin-right: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .form {
+    margin-top: 80px;
+  }
+}

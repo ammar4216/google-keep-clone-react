@@ -1,0 +1,110 @@
+.navbar {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuBar {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.navmenu {
+  background-color: black;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 2;
+}
+
+.navmenu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.navText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.navText a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  height: 95%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  transition: all 0.5s ease-in;
+}
+
+.navText a:hover {
+  background-color: blueviolet;
+}
+
+.navMenuItems {
+  width: 100%;
+}
+.navbarToggle {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+.brandContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandLogo {
+  height: 45px;
+  width: 45px;
+  margin-left: 20px;
+}
+.navbar h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-left: 10px;
+  margin-right: 12rem;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 22vh;
+  }
+  .navContent {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
